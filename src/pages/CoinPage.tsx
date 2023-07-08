@@ -88,7 +88,7 @@ function CoinPage() {
 
           {/* <div>тут будет график</div> */}
 
-          <Button onClick={() => navigate('/')}>На главную</Button>
+          <Button onClick={() => navigate('/coincap')}>На главную</Button>
         </CoinContainer>
       )}
     </>
