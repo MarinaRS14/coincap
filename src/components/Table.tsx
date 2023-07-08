@@ -21,7 +21,9 @@ function Table({ coin }: CoinProps) {
       <TableContent>
         <div>{coin.rank}</div>
         <div className="content-symbol">{coin.symbol}</div>
-        <div className="content-name" onClick={() => navigate('/coinpage', { state: coin.id })}>
+        <div
+          className="content-name"
+          onClick={() => navigate('/coincap/coinpage', { state: coin.id })}>
           {coin.name}
         </div>
         <div>{parseFloat(coin.vwap24Hr).toFixed(2)} $</div>
