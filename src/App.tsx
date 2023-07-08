@@ -12,8 +12,8 @@ function App() {
         <GlobalStyles />
         <Header />
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/coinpage" element={<CoinPage />} />
+          <Route path="/coincap" element={<Main />} />
+          <Route path="/coincap/coinpage" element={<CoinPage />} />
         </Routes>
       </BrowserRouter>
     </AppContainer>
