@@ -28,11 +28,10 @@ function CoinPage() {
   const addToCart = () => {
     if (coin && +amount !== 0 && !Number.isNaN(+amount)) {
       dispatch(addCoinsToCart(coin.data, +amount));
-      setAmount('');
     } else if (Number.isNaN(+amount)) {
       alert('Введите число');
-      setAmount('');
     }
+    setAmount('');
   };
 
   return (
@@ -85,9 +84,6 @@ function CoinPage() {
               Перейти на сайт
             </div>
           </InfoBlock>
-
-          {/* <div>тут будет график</div> */}
-
           <Button onClick={() => navigate('/coincap')}>На главную</Button>
         </CoinContainer>
       )}
